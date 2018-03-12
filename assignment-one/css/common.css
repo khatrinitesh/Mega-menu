@@ -1,0 +1,69 @@
+body 
+{
+	background-color: gray;
+}
+
+.navmenu
+{
+	width: 100%;
+	background-color: brown;
+	float: left;
+}
+
+.navmenu ul li 
+{
+	list-style-type: none;
+	float: left;
+	display: inline-block;
+}
+
+.navmenu ul li a
+{
+	display: block;
+	text-decoration: none;
+	color:#fff;
+	padding: 20px;
+	font-size: 14px;
+	font-family: helvetica;
+}
+
+.navmenu ul li a:hover
+{
+	background-color: burlywood;
+	color:brown;
+	-webkit-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+}
+
+.navmenu ul li ul.megamenu
+{
+	max-width: 80%;
+	padding: 20px;
+	background-color: burlywood;
+	position: absolute;
+	display: none;
+}
+
+.navmenu ul li:hover > ul.megamenu
+{
+	display: block;
+}
+
+.navmenu ul li ul.megamenu li
+{
+	width: 180px;
+	float: left;
+	margin-right: 40px;
+}
+
+.navmenu ul li ul.megamenu li a:hover
+{
+	padding: 10px 0px;
+	font-size: 18px;
+	color:brown;
+	text-align: left;
+	margin-left: 5px;
+	border-bottom: 1px solid red;
+}
+
